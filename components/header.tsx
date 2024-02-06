@@ -5,7 +5,7 @@ import { Menu } from "lucide-react";
 
 export default function Header() {
   return (
-    <div className="flex items-center justify-between py-4 border-b-2 px-10 md:px-20 sticky top-0 text-green-600 bg-background">
+    <div className="flex items-center justify-between py-4 border-b-2 px-10 md:px-20 sticky top-0 text-green-600 bg-neutral-950">
       <div>
         <Image
           className="rounded-full"
@@ -18,21 +18,21 @@ export default function Header() {
       <div className="items-center gap-8 hidden md:flex">
         <Link
           className="hover:font-bold hover:scale-105 transition-all duration-200"
+          href="/"
+        >
+          Inicio
+        </Link>
+        <Link
+          className="hover:font-bold hover:scale-105 transition-all duration-200"
           href="/about"
         >
           Acerca de Mí
         </Link>
         <Link
           className="hover:font-bold hover:scale-105 transition-all duration-200"
-          href="/proyects"
+          href="/projects"
         >
           Proyectos
-        </Link>
-        <Link
-          className="hover:font-bold hover:scale-105 transition-all duration-200"
-          href="/experience"
-        >
-          Experiencia
         </Link>
       </div>
       <Menu className="cursor-pointer md:hidden" size={25} />

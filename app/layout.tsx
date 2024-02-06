@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Sofia_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const sofia = Sofia_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portafolio | FT Dev",
@@ -24,10 +24,10 @@ export default function RootLayout({
       enableSystem
       disableTransitionOnChange
     >
-      <div className="min-h-screen max-w-full">
+      <div className="max-w-full bg-gradient-to-r from-neutral-950 to-neutral-800">
         <Header />
-        <body className={inter.className}>{children}</body>
-        {/* <Footer /> */}
+        <body className={sofia.className}>{children}</body>
+        <Footer />
       </div>
     </ThemeProvider>
   );

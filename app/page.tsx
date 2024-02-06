@@ -2,21 +2,23 @@ import { Button } from "@/components/ui/button";
 import logo from "../public/logoImg.jpg";
 import amable from "../public/amable-comprobantes.webp";
 import Image from "next/image";
+import Link from "next/link";
 import {
   ChevronDown,
   Code,
   Github,
-  Link,
+  LinkIcon,
   Linkedin,
   Mail,
+  MousePointerClick,
   Share2,
   Star,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="py-8 px-10 md:px-20 space-y-24">
+    <div className="py-8 px-10 md:px-20 space-y-24 mb-5">
       <section>
         <div className="flex items-center justify-between flex-col-reverse gap-4 md:flex-row text-center md:text-left">
           <div className="space-y-6">
@@ -112,7 +114,7 @@ export default function Home() {
                 target="_blank"
               >
                 <span className="font-bold">Link</span>
-                <Link className="h-4 w-4" />
+                <LinkIcon className="h-4 w-4" />
               </a>
             </Button>
           </div>
@@ -137,6 +139,12 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Link href="/projects">
+          <Button size={"lg"} className="flex items-center gap-2 mx-auto mt-4">
+            <span className="font-bold">Ver más</span>
+            <MousePointerClick className="h-4 w-4" />
+          </Button>
+        </Link>
       </section>
     </div>
   );
