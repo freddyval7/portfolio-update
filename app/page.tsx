@@ -11,6 +11,7 @@ import {
   Linkedin,
   Mail,
   MousePointerClick,
+  SendHorizonal,
   Share2,
   Star,
 } from "lucide-react";
@@ -18,7 +19,7 @@ import { Badge } from "@/components/ui/badge";
 
 export default function Page() {
   return (
-    <div className="py-8 px-10 md:px-20 space-y-24 mb-5">
+    <div className="py-8 px-10 md:px-20 space-y-16 mb-5">
       <section>
         <div className="flex items-center justify-between flex-col-reverse gap-4 md:flex-row text-center md:text-left">
           <div className="space-y-6">
@@ -41,11 +42,12 @@ export default function Page() {
                 className="text-green-500"
                 href="mailto:freddytomada7@gmail.com"
               >
-                <div className="flex items-center gap-1 border-2 border-card-foreground p-2 rounded-md mt-4">
+                <div className="flex items-center gap-2 border-2 border-card-foreground p-2 rounded-md mt-4">
                   <Mail className="h-4 w-4" />
-                  <span className="text-center md:text-left">
+                  <span className="text-center md:text-left flex-1">
                     freddytomada7@gmail.com
                   </span>
+                  <SendHorizonal className="h-4 w-4" />
                 </div>
               </a>
             </div>

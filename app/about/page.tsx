@@ -15,13 +15,15 @@ export default function Page() {
   return (
     <div className="py-8 px-10 md:px-20 space-y-24 mb-10">
       <section>
-        <h1 className="mx-auto text-2xl text-center md:text-5xl w-full pb-6">
+        <h1 className="mx-auto text-2xl text-center md:text-5xl w-full md:mt-6 md:mb-14 text-green-600 font-bold">
           Acerca de Mi
         </h1>
         <div className="md:grid grid-cols-2 gap-4 flex flex-col-reverse justify-between text-center md:text-left">
           <div className="space-y-6">
-            <h1 className="md:text-3xl">Sin esfuerzo, no hay resultados</h1>
-            <p className="text-accent-foreground">
+            <h1 className="md:text-3xl font-bold">
+              Sin esfuerzo, no hay resultados
+            </h1>
+            <p className="text-accent-foreground text-lg border p-5 bg-neutral-950 rounded-sm">
               Soy Freddy Tomada, un desarrollador web de Venezuela, desde
               pequeño apasionado por la tecnología. Me encanta aprender y
               enfrentar nuevos retos, siempre buscando la excelencia en cada
@@ -30,6 +32,44 @@ export default function Page() {
               Actualmente soy un estudiante de ingeniería Informática en la
               Universidad Politécnica Territorial Andrés Eloy Blanco (UPTAEB).
             </p>
+            <div className="flex items-center gap-4">
+              <Hammer className="h-12 w-12" />
+              <h1 className="md:text-4xl font-bold">Skills</h1>
+            </div>
+            <div>
+              <div className="grid grid-cols-3 md:flex md:items-center gap-4">
+                <Button
+                  className="bg-yellow-300 text-background font-bold flex items-center gap-2 hover:scale-110 transition-all duration-200"
+                  variant={"outline"}
+                >
+                  Javascript
+                </Button>
+                <Button
+                  className="bg-orange-500 flex items-center gap-2 hover:scale-110 transition-all duration-200"
+                  variant={"outline"}
+                >
+                  HTML
+                </Button>
+                <Button
+                  className="bg-blue-400 flex items-center gap-2 hover:scale-110 transition-all duration-200"
+                  variant={"outline"}
+                >
+                  CSS
+                </Button>
+                <Button
+                  className="bg-sky-600 flex items-center gap-2 hover:scale-110 transition-all duration-200"
+                  variant={"outline"}
+                >
+                  React
+                </Button>
+                <Button
+                  className="bg-foreground text-background font-bold flex items-center gap-2 hover:scale-110 transition-all duration-200"
+                  variant={"outline"}
+                >
+                  NextJS
+                </Button>
+              </div>
+            </div>
           </div>
           <div>
             <Image
@@ -37,51 +77,6 @@ export default function Page() {
               src={yo}
               alt="fotoPersonal"
             />
-          </div>
-        </div>
-      </section>
-      <section className="space-y-6">
-        <div className="flex items-center gap-4">
-          <Hammer className="h-12 w-12" />
-          <h1 className="md:text-4xl font-bold">Skills</h1>
-        </div>
-        <div>
-          <div className="flex items-center gap-4">
-            <Button
-              className="bg-blue-600 flex items-center gap-2 hover:scale-110 transition-all duration-200"
-              variant={"outline"}
-            >
-              <Linkedin className="h-4 w-4" />
-              Javascript
-            </Button>
-            <Button
-              className="bg-gray-500 flex items-center gap-2 hover:scale-110 transition-all duration-200"
-              variant={"outline"}
-            >
-              <Github className="h-4 w-4" />
-              HTML
-            </Button>
-            <Button
-              className="bg-gray-500 flex items-center gap-2 hover:scale-110 transition-all duration-200"
-              variant={"outline"}
-            >
-              <Github className="h-4 w-4" />
-              CSS
-            </Button>
-            <Button
-              className="bg-gray-500 flex items-center gap-2 hover:scale-110 transition-all duration-200"
-              variant={"outline"}
-            >
-              <Github className="h-4 w-4" />
-              React
-            </Button>
-            <Button
-              className="bg-gray-500 flex items-center gap-2 hover:scale-110 transition-all duration-200"
-              variant={"outline"}
-            >
-              <Github className="h-4 w-4" />
-              NextJS
-            </Button>
           </div>
         </div>
       </section>
