@@ -15,13 +15,17 @@ export default function Page() {
   return (
     <div className="py-8 px-10 md:px-20 space-y-24 mb-10">
       <section>
-        <h1 className="mx-auto text-2xl text-center md:text-5xl w-full md:mt-6 md:mb-14 text-green-600 font-bold">
+        <h1 className="mx-auto glitch shine text-2xl text-center md:text-5xl w-full md:mt-6 md:mb-14 text-green-600 font-bold">
           Acerca de Mi
         </h1>
         <div className="md:grid grid-cols-2 gap-4 flex flex-col-reverse justify-between text-center md:text-left">
           <div className="space-y-6">
-            <h1 className="md:text-3xl font-bold">
-              Sin esfuerzo, no hay resultados
+            <h1 className="md:text-3xl font-bold difuminate">
+              <span className="difuminate-span">Sin </span>
+              <span className="difuminate-span">esfuerzo, </span>
+              <span className="difuminate-span">no </span>
+              <span className="difuminate-span">hay </span>
+              <span className="difuminate-span">resultados </span>
             </h1>
             <p className="text-accent-foreground text-lg border p-5 bg-neutral-950 rounded-sm">
               Soy Freddy Tomada, un desarrollador web de Venezuela, desde

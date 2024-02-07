@@ -14,7 +14,7 @@ import {
 export default function Header() {
   return (
     <Sheet>
-      <div className="flex items-center justify-between py-4 border-b-2 px-10 md:px-20 sticky top-0 text-green-600 bg-neutral-950">
+      <div className="flex z-50 items-center justify-between py-4 border-b-2 px-10 md:px-20 sticky top-0 text-green-600 bg-neutral-950">
         <div>
           <Image
             className="rounded-full"

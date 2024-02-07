@@ -30,7 +30,7 @@ export default function Page() {
             <p className="text-accent-foreground">
               Busco constantemente retos para crecer y ser mejor.
             </p>
-            <Button className="flex items-center gap-1 rounded-md mx-auto md:mx-0 w-full">
+            <Button className="flex items-center hover:animate-bounce hover:direction-alternate gap-1 rounded-md mx-auto md:mx-0 w-full">
               <ChevronDown className="h-4 w-4" />
               <span className="font-bold">VER MI CV</span>
             </Button>
@@ -42,12 +42,12 @@ export default function Page() {
                 className="text-green-500"
                 href="mailto:freddytomada7@gmail.com"
               >
-                <div className="flex items-center gap-2 border-2 border-card-foreground p-2 rounded-md mt-4">
+                <div className="flex items-center group gap-2 border-2 border-card-foreground p-2 rounded-md mt-4">
                   <Mail className="h-4 w-4" />
                   <span className="text-center md:text-left flex-1">
                     freddytomada7@gmail.com
                   </span>
-                  <SendHorizonal className="h-4 w-4" />
+                  <SendHorizonal className="h-4 w-4 animate-in slide-in-from-left-6 repeat-infinite duration-1000 paused group-hover:running" />
                 </div>
               </a>
             </div>
