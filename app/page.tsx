@@ -69,7 +69,7 @@ export default function Page() {
         <div>
           <div className="flex items-center gap-4">
             <Button
-              className="bg-blue-600 hover:scale-110 transition-all duration-200"
+              className="bg-sky-600 hover:scale-110 transition-all duration-200"
               variant={"outline"}
             >
               <a
@@ -126,9 +126,9 @@ export default function Page() {
               contabilidad de muchas empresas.
             </p>
             <div className="flex items-center gap-4">
-              <Badge className="bg-blue-300">React</Badge>
+              <Badge className="bg-sky-300">React</Badge>
               <Badge>Next.js</Badge>
-              <Badge className="bg-blue-600 text-white hover:text-black">
+              <Badge className="bg-sky-600 text-white hover:text-black">
                 Typescript
               </Badge>
             </div>

@@ -51,7 +51,7 @@ export default function Page() {
                   HTML
                 </Button>
                 <Button
-                  className="bg-blue-400 flex items-center gap-2 hover:scale-110 transition-all duration-200"
+                  className="bg-sky-400 flex items-center gap-2 hover:scale-110 transition-all duration-200"
                   variant={"outline"}
                 >
                   CSS
