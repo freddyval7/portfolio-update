@@ -34,7 +34,12 @@ export default function Page() {
             </p>
             <Button className="flex items-center hover:animate-bounce hover:direction-alternate gap-1 rounded-md mx-auto md:mx-0 w-full">
               <ChevronDown className="h-4 w-4" />
-              <span className="font-bold">VER MI CV</span>
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/1uqvVgMnyyLpiOlbUburtqBcvVe4TmYX4/view?usp=sharing"
+              >
+                <span className="font-bold">VER MI CV</span>
+              </a>
             </Button>
             <div className="flex-col gap-2">
               <p>
