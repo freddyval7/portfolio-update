@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import yo from "@/public/yo.jpeg";
 import Image from "next/image";
-import ExperienceList from "@/app/about/list-experience";
+import { ExperienceList } from "@/app/about/list-experience";
 
 export default function Page() {
   return (

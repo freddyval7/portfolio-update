@@ -5,7 +5,7 @@ const font = Sofia_Sans({
   weight: ["400"],
 });
 
-export default function ExperienceList() {
+export function ExperienceList() {
   return (
     <ul className={font.className}>
       <li className="list-disc text-xl">
