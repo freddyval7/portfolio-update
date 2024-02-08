@@ -23,9 +23,11 @@ export default function Page() {
       <section>
         <div className="flex items-center justify-between flex-col-reverse gap-4 md:flex-row text-center md:text-left">
           <div className="space-y-6">
-            <h1 className="md:text-3xl">
+            <h1 className="text-xl md:text-3xl">
               Hola, soy Freddy,{" "}
-              <span className="text-green-500">un desarrollador Web.</span>
+              <span className="text-green-500 shine">
+                un desarrollador Web.
+              </span>
             </h1>
             <p className="text-accent-foreground">
               Busco constantemente retos para crecer y ser mejor.
@@ -64,7 +66,7 @@ export default function Page() {
       <section className="space-y-6">
         <div className="flex items-center gap-4">
           <Share2 className="h-12 w-12" />
-          <h1 className="md:text-4xl font-bold">Social</h1>
+          <h1 className="text-2xl md:text-4xl font-bold">Social</h1>
         </div>
         <div>
           <div className="flex items-center gap-4">
@@ -102,11 +104,11 @@ export default function Page() {
       <section className="space-y-6">
         <div className="flex items-center gap-4">
           <Star className="h-12 w-12" />
-          <h1 className="md:text-4xl font-bold">Proyectos</h1>
+          <h1 className="text-2xl md:text-4xl font-bold">Proyectos</h1>
         </div>
         <div>
           <div className="flex items-center justify-between">
-            <h2 className="md:text-3xl text-green-500 font-bold">
+            <h2 className="text-xl md:text-3xl text-green-500 font-bold">
               Amable Conti
             </h2>
             <Button>
@@ -141,12 +143,17 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <Link href="/projects">
-          <Button size={"lg"} className="flex items-center gap-2 mx-auto mt-4">
-            <span className="font-bold">Ver más</span>
-            <MousePointerClick className="h-4 w-4" />
+        <div className="w-full flex justify-center">
+          <Button
+            size={"lg"}
+            className="duration-200 transition-all mt-4 hover:scale-110 group"
+          >
+            <Link className="flex items-center gap-2" href="/projects">
+              <span className="font-bold">Ver más</span>
+              <MousePointerClick className="h-4 w-4 group-hover:animate-pulse group-hover:scale-110" />
+            </Link>
           </Button>
-        </Link>
+        </div>
       </section>
     </div>
   );

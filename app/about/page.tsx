@@ -15,12 +15,12 @@ export default function Page() {
   return (
     <div className="py-8 px-10 md:px-20 space-y-24 mb-10">
       <section>
-        <h1 className="mx-auto glitch shine text-2xl text-center md:text-5xl w-full md:mt-6 md:mb-14 text-green-600 font-bold">
+        <h1 className="mx-auto brillo text-2xl text-center md:text-5xl w-full md:mt-6 md:mb-14 text-green-600 font-bold">
           Acerca de Mi
         </h1>
         <div className="md:grid grid-cols-2 gap-4 flex flex-col-reverse justify-between text-center md:text-left">
           <div className="space-y-6">
-            <h1 className="md:text-3xl font-bold difuminate">
+            <h1 className="text-xl md:text-3xl font-bold difuminate">
               <span className="difuminate-span">Sin </span>
               <span className="difuminate-span">esfuerzo, </span>
               <span className="difuminate-span">no </span>
@@ -38,7 +38,7 @@ export default function Page() {
             </p>
             <div className="flex items-center gap-4">
               <Hammer className="h-12 w-12" />
-              <h1 className="md:text-4xl font-bold">Skills</h1>
+              <h1 className="text-2xl md:text-4xl font-bold">Skills</h1>
             </div>
             <div>
               <div className="grid grid-cols-3 md:flex md:items-center gap-4">
@@ -87,7 +87,7 @@ export default function Page() {
       <section className="space-y-6">
         <div className="flex items-center gap-4">
           <BookOpenText className="h-12 w-12" />
-          <h1 className="md:text-4xl font-bold">Experiencia</h1>
+          <h1 className="md:text-4xl text-2xl font-bold">Experiencia</h1>
         </div>
         <div>
           <ExperienceList />

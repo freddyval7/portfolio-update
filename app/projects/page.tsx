@@ -10,7 +10,7 @@ export default function Page() {
       <section className="space-y-6">
         <div>
           <div className="flex items-center justify-between">
-            <h2 className="md:text-3xl text-green-500 font-bold">
+            <h2 className="text-xl md:text-3xl text-green-500 font-bold">
               Amable Conti
             </h2>
             <Button>
