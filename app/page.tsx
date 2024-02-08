@@ -32,15 +32,16 @@ export default function Page() {
             <p className="text-accent-foreground">
               Busco constantemente retos para crecer y ser mejor.
             </p>
-            <Button className="flex items-center hover:animate-bounce hover:direction-alternate gap-1 rounded-md mx-auto md:mx-0 w-full">
-              <ChevronDown className="h-4 w-4" />
-              <a
-                target="_blank"
-                href="https://drive.google.com/file/d/1uqvVgMnyyLpiOlbUburtqBcvVe4TmYX4/view?usp=sharing"
-              >
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1uqvVgMnyyLpiOlbUburtqBcvVe4TmYX4/view?usp=sharing"
+            >
+              <Button className="flex items-center mt-2 md:mt-4 hover:animate-bounce hover:direction-alternate gap-1 rounded-md mx-auto md:mx-0 w-full">
+                <ChevronDown className="h-4 w-4" />
+
                 <span className="font-bold">VER MI CV</span>
-              </a>
-            </Button>
+              </Button>
+            </a>
             <div className="flex-col gap-2">
               <p>
                 Puedes contactarme también a través de mi correo electrónico:
