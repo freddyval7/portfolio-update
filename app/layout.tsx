@@ -1,9 +1,10 @@
+import React from "react";
 import type { Metadata } from "next";
 import { Sofia_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
-import Footer from "@/components/footer";
 
 const sofia = Sofia_Sans({ subsets: ["latin"] });
 
@@ -18,17 +19,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="dark"
-      enableSystem
-      disableTransitionOnChange
-    >
-      <div className="max-w-full bg-gradient-to-r from-neutral-950 to-neutral-800">
+    <html lang="en" suppressHydrationWarning>
+      <body className={sofia.className}>
         <Header />
-        <body className={sofia.className}>{children}</body>
-        <Footer />
-      </div>
-    </ThemeProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="max-w-full bg-gradient-to-r from-neutral-950 to-neutral-800">
+            {children}
+            <Footer />
+          </div>
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }
