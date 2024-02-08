@@ -15,7 +15,7 @@ export default function Header() {
           height={25}
         />
       </div>
-      <div className="items-center gap-8 flex">
+      <div className="items-center gap-4 md:gap-8 flex whitespace-nowrap">
         <Link
           className="hover:font-bold hover:scale-105 transition-all duration-200"
           href="/"

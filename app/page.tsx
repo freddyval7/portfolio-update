@@ -54,7 +54,7 @@ export default function Page() {
                   <span className="text-center md:text-left flex-1">
                     freddytomada7@gmail.com
                   </span>
-                  <SendHorizonal className="h-4 w-4 animate-in slide-in-from-left-6 repeat-infinite duration-1000 paused group-hover:running" />
+                  <SendHorizonal className="h-4 w-4 animate-in md:slide-in-from-left-6 repeat-infinite duration-1000 paused group-hover:running" />
                 </div>
               </a>
             </div>
