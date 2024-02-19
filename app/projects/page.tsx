@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import amable from "@/public/amable-comprobantes.webp";
 import space from "@/public/space-multipage.png";
+import multistep from "@/public/multistep-form.png";
 import { Code2, LinkIcon } from "lucide-react";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
@@ -42,6 +43,58 @@ export default function Page() {
                 className="rounded-md w-full bg-white"
                 src={amable}
                 alt="amable-conti"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl md:text-3xl text-green-500 font-bold">
+              Multistep Form
+            </h2>
+            <div className="flex items-center gap-2">
+              <Button>
+                <a
+                  className="flex items-center gap-2"
+                  href="https://multistep-form-freddyval7.vercel.app"
+                  target="_blank"
+                >
+                  <span className="font-bold">Link</span>
+                  <LinkIcon className="h-4 w-4" />
+                </a>
+              </Button>
+              <Button>
+                <a
+                  className="flex items-center gap-2"
+                  href="https://github.com/freddyval7/multistep-form"
+                  target="_blank"
+                >
+                  <span className="font-bold">Código</span>
+                  <Code2 className="h-4 w-4" />
+                </a>
+              </Button>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <p className="mt-6 md:mt-0">
+              Formulario dividido en pasos que permite al usuario colocar sus
+              datos y escoger una subscripción acorde a sus necesidades.
+            </p>
+            <div className="flex items-center gap-4">
+              <Badge className="bg-pink-400 text-white hover:text-black">
+                React Hook Form
+              </Badge>
+              <Badge>NextJS</Badge>
+              <Badge className="bg-sky-600 text-white hover:text-black">
+                Tailwind CSS
+              </Badge>
+              <Badge>Jotai</Badge>
+            </div>
+            <div>
+              <Image
+                className="rounded-md w-full bg-white"
+                src={multistep}
+                alt="multistep-form"
               />
             </div>
           </div>
