@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button";
 import logo from "../public/logoImg.jpg";
 import amable from "../public/amable-comprobantes.webp";
+import ustore from "@/public/ustore.png";
 import Image from "next/image";
 import Link from "next/link";
 import {
   ChevronDown,
   Code,
+  Code2,
   Github,
   LinkIcon,
   Linkedin,
@@ -145,6 +147,54 @@ export default function Page() {
                 className="rounded-md w-full bg-white"
                 src={amable}
                 alt="amable-conti"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl md:text-3xl text-green-500 font-bold">
+              U Store
+            </h2>
+            <div className="flex items-center gap-2">
+              <Button>
+                <a
+                  className="flex items-center gap-2"
+                  href="https://u-store.vercel.app"
+                  target="_blank"
+                >
+                  <span className="font-bold">Link</span>
+                  <LinkIcon className="h-4 w-4" />
+                </a>
+              </Button>
+              <Button>
+                <a
+                  className="flex items-center gap-2"
+                  href="https://github.com/freddyval7/fake-store"
+                  target="_blank"
+                >
+                  <span className="font-bold">Código</span>
+                  <Code2 className="h-4 w-4" />
+                </a>
+              </Button>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <p className="mt-6 md:mt-0">
+              Tienda online que permite a los usuarios ver productos, buscarlos,
+              filtrarlos y agregarlos al carrito, utilizando el Fakestore API.
+            </p>
+            <div className="flex items-center gap-4">
+              <Badge>NextJS</Badge>
+              <Badge className="bg-sky-600 text-white hover:text-black">
+                Tailwind CSS
+              </Badge>
+            </div>
+            <div>
+              <Image
+                className="rounded-md w-full bg-white"
+                src={ustore}
+                alt="u-store"
               />
             </div>
           </div>
