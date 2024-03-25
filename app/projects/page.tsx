@@ -3,6 +3,7 @@ import amable from "@/public/amable-comprobantes.webp";
 import space from "@/public/space-multipage.png";
 import multistep from "@/public/multistep-form.png";
 import ustore from "@/public/ustore.png";
+import utask from "@/public/utask.png";
 import { Code2, LinkIcon } from "lucide-react";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
@@ -44,6 +45,64 @@ export default function Page() {
                 className="rounded-md w-full bg-white"
                 src={amable}
                 alt="amable-conti"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl md:text-3xl text-green-500 font-bold">
+              Utask
+            </h2>
+            <div className="flex items-center gap-2">
+              <Button>
+                <a
+                  className="flex items-center gap-2"
+                  href="https://utask-app.vercel.app"
+                  target="_blank"
+                >
+                  <span className="font-bold">Link</span>
+                  <LinkIcon className="h-4 w-4" />
+                </a>
+              </Button>
+              <Button>
+                <a
+                  className="flex items-center gap-2"
+                  href="https://github.com/freddyval7/utask-app"
+                  target="_blank"
+                >
+                  <span className="font-bold">Código</span>
+                  <Code2 className="h-4 w-4" />
+                </a>
+              </Button>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <p className="mt-6 md:mt-0">
+              Administrador de tareas inspirado en Trello, en donde el usuario
+              puede autenticarse, tener sus propias organizaciones, crear sus
+              tablas con listas y cartas.
+            </p>
+            <div className="flex items-center gap-4">
+              <Badge>NextJS</Badge>
+              <Badge className="bg-sky-600 text-white hover:text-black">
+                Tailwind CSS
+              </Badge>
+              <Badge className="bg-green-500 text-white hover:text-black">
+                Prisma
+              </Badge>
+              <Badge className="bg-blue-600 text-white hover:text-black">
+                Clerk
+              </Badge>
+              <Badge className="bg-purple-500 text-white hover:text-black">
+                Stripe
+              </Badge>
+            </div>
+            <div>
+              <Image
+                className="rounded-md w-full bg-white"
+                src={utask}
+                alt="utask"
               />
             </div>
           </div>
