@@ -81,7 +81,8 @@ export default function Page() {
             <p className="mt-6 md:mt-0">
               Administrador de tareas inspirado en Trello, en donde el usuario
               puede autenticarse, tener sus propias organizaciones, crear sus
-              tablas con listas y cartas.
+              tablas con listas y cartas, además de utilizar un sistema de
+              planes pagos con Stripe.
             </p>
             <div className="flex items-center gap-4">
               <Badge>NextJS</Badge>
